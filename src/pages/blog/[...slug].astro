@@ -16,6 +16,8 @@ const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
+	before slot header: -&gt;
 	<h1>{post.data.title}</h1>
+	&lt;- after slot header
 	<Content />
 </BlogPost>
